@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>doctus showcase</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<style type="text/css">
+html,body {
+	font-family: sans-serif;
+}
+
+#main {
+	border: thin;
+	border-color: black;
+	border-style: solid;
+	padding: 10px;
+	margin: 10px;
+	overflow: auto;
+}
+
+#info {
+	border: thin;
+	border-color: black;
+	border-style: solid;
+	padding: 10px;
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+
+	<div id="info">Welcome to 'doctus showcase'</div>
+	<div id="main">
+		<div id="pr01"
+			style="width: 200px; height: 100px; background-color: yellow;">
+			press release 01</div>
+
+		<button id="b01">button 01</button>
+
+		<br> <select id="s01"></select>
+		<button id="b02">show selection</button>
+	</div>
+
+
+	<script type="text/javascript" src="target/scala-2.10/doctus-scalajs-showcase-opt.js"></script>
+
+	<script type="text/javascript">
+		Showcase().main();
+	</script>
+
+</body>
+</html>

@@ -12,73 +12,24 @@ html,body {
 	font-size: small;
 	background-color: white;
 }
-
-#header {
-	height: 100px;
-	padding: 10px;
-	border-bottom: 1px solid black;
-}
-
-#content {
-	overflow: auto;
-	padding: 10px;
-}
-.main {
-	overflow: auto;
-	border-bottom: 1px solid black;
-	padding: 10px;
-}
-
-#info {
-	margin: 10px;
-	height: 100px
-}
-
-.touch {
-	width: 200px;
-	height: 100px;
+p{
+	padding: 0px;
+	margin: 0px;
 }
 
 </style>
 </head>
-<div id="header">
-<h1 id="info">Welcome to the 'doctus showcase'</h1>
+<div id="term">
+<div>
+<p>Welcome to the new doctus showcase</p>
 </div>
-
-<div id="content">
-	<div class="main">
-		<button id="b01">button 01</button>
-		<br><select id="s01"></select>
-		<button id="b02">show selection of 'select 01' </button>
-		<br><canvas id="c01" width="500" height="400"></canvas>
-		<br><canvas id="c02" width="500" height="400"></canvas>
-	</div>
-	<div class="main">
-		<p>mobile</p>
-		<div id="touch01" class="touch" style="background-color: yellow;">touch 01</div>
-		<div id="touch02" class="touch" style="background-color: blue;">touch 02</div>
-		<div id="touch01a" class="touch" style="background-color: yellow;">touch 01a</div>
-		<div id="touch02a" class="touch" style="background-color: blue;">touch 02a</div>
-		<div id="touch03" style="background-image: url('src/main/resources/touch01.png'); width: 200px; height: 200px;">touch 03</div>
-		<div id="touch04" style="background-image: url('src/main/resources/touch02.png'); width: 200px; height: 200px;">touch 04</div>
-	</div>
-	<div class="main">
-		<p>browser</p>
-		<div id="pr01" class="touch" style="background-color: yellow;">press release 01</div>
-	</div>
 </div>
 
 
 <script type="text/javascript" src="target/scala-2.10/doctus-scalajs-showcase-opt.js"></script>
 
 <script type='text/javascript'>
-	$(document).ready(sizeContent);
-	$(window).resize(sizeContent);
-	function sizeContent() {
-		var newHeight = $("html").height() - $("#header").height() - 41 + "px";
-		$("#content").css("height", newHeight);
-	}
-	Showcase().main();
+	Showcase1().main();
 </script>
 
 </body>

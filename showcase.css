@@ -19,8 +19,6 @@ p {
     left: 20px;
     padding: 5px;
 	background-color: #FFAA00;
-	width: 270px;
-	height: auto;
 }
 
 #red,
@@ -41,7 +39,7 @@ p {
 #green {
 	background-color: green;
     left: 30px;
-    top: 450px;
+    bottom: 10px;
 }
 #yellow {
 	background-color: yellow;

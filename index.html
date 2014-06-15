@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <meta name="viewport"
 	content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<link rel="stylesheet" type="text/css" href="showcase.css" />
+<style type="text/css">
+html,body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+	font-size: small;
+	background-color: yellow;
+}
+p {
+	padding: 0px;
+	margin: 0px;
+}
+#term {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
+	background-color: #FFAA00;
+}
+#green {
+	background-color: green;
+    padding: 5px;
+    padding: 10px;
+	width:300px;
+	height:200px;
+	position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
+</style>
 </head>
-<div id="green" >GREEN</div>
+<div id="green">green</div>
 <div id="term">
     <div>Welcome to the doctus event monitor</div>
     <div>&nbsp;</div>
@@ -36,7 +67,7 @@
 <script type="text/javascript" src="target/scala-2.10/doctus-scalajs-showcase-opt.js"></script>
 
 <script type='text/javascript'>
-	Showcase2().main();
+	Showcase1().main();
 </script>
 
 </body>
